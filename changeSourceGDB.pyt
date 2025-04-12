@@ -4,18 +4,18 @@ import arcpy
 import os
 
 
-class changeSourceGDB:
+class Toolbox:
     def __init__(self):
         """Define the toolbox (the name of the toolbox is the name of the
         .pyt file)."""
-        self.label = "Change Source GDB"
+        self.label = "changeSourceGDB.pyt"
         self.alias = "changeSourceGDB"
 
         # List of tool classes associated with this toolbox
-        self.tools = [updateGDBSource]
+        self.tools = [changeSourceGDB]
 
 
-class updateGDBSource:
+class changeSourceGDB:
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
         self.label = "Update GDB Source"
